@@ -64,6 +64,198 @@
 
 
 
+/*==========  section about ==========*/
+.about
+  margin: 73px 0 97px
+
+.advantages-in-number
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 29px 0 36px
+  border: 2px solid #1D9BD7
+    radius: 20px
+  padding: 25px 10px 33px 25px
+  &__item
+    color: $accent
+    font-weight: bold
+    flex: 1
+    &:first-child
+      max-width: 120px
+    &:nth-child(2)
+      max-width: 135px
+    &:nth-child(3)
+      max-width: 200px
+    &:last-child
+      max-width: 140px
+    &-number
+      font-size: 50px
+      line-height: 60px
+
+.foundation-projects
+  h3
+    margin: 0 0 20px
+    text-transform: uppercase
+    color: #444444
+    font-size: 20px
+    font-weight: bold
+
+.foundation-projects-wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: space-between
+
+.foundation-projects-box
+  width: 218px
+  min-height: 146px
+  display: flex
+  align-items: stretch
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1)
+  background: #fff
+  border-radius: 20px
+  padding: 17px 12px 14px 13px
+  font-size: 12px
+  color: #414042
+  &__icon
+    @include d-flex
+    width: 35px
+    margin: 0 0 auto
+    img
+      filter: drop-shadow(0px 10px 20px rgba(255, 186, 0, 0.75))
+  &__content
+    width: calc(100% - 35px)
+    padding: 0 0 0 20px
+    display: flex
+    flex-direction: column
+    p
+      margin: 8px 0 13px
+  .links-accent
+    margin: auto 0 0
+  h4
+    text-transform: uppercase
+    font-weight: bold
+    max-width: 120px
+
+.about-photo
+  position: relative
+  overflow: hidden
+  @include d-flex
+  height: 589px
+  width: 100%
+  max-width: 676px
+  margin: 0 0 0 auto
+  border-radius: 20px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__head
+    width: 100%
+    position: absolute
+    top: 24px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    padding: 0 28px
+
+.logo-company
+  max-width: 175px
+  @include d-flex
+
+/*==========  section about end  ==========*/
+
+
+
+/*==========  section kids-help ==========*/
+.kids-help
+  margin: 0 0 127px
+  position: relative
+  z-index: 1
+  &:before, &:after
+    content: ''
+    position: absolute
+    width: 1358px
+    height: 1358px
+    opacity: .5
+    z-index: -1
+  &:before
+    top: -239px
+    left: -858px
+    background: radial-gradient(50% 50% at 50% 50%, #FFBA00 0%, rgba(255, 186, 0, 0) 100%)
+  &:after
+    top: -303px
+    right: -607px
+    background: radial-gradient(50% 50% at 50% 50%, #1D9BD7 0%, rgba(29, 155, 215, 0) 100%)
+  h2
+    margin: 0 0 24px
+
+.kids-card
+  width: 100%
+  height: 100%
+  background: #ffff
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)
+  border-radius: 20px
+  padding: 20px 20px 24px
+  color: #414042
+  display: flex
+  flex-direction: column
+  font-size: 14px
+  &__photo
+    width: 100%
+    height: 237px
+    border-radius: 10px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__name
+    margin: 24px 0 16px
+    text-transform: uppercase
+    font-weight: bold
+  &__diagnosis
+    margin: 0 0 30px
+    max-width: 270px
+  .btn
+    margin: auto 0 0
+
+
+.btn-toggle
+  margin: 48px auto 0
+
+/*==========  section kids-help end  ==========*/
+
+
+
+/*==========  section kids-in-line ==========*/
+.kids-in-line
+  margin: 0 0 35px
+  h2
+    margin: 0 0 20px
+    max-width: 585px
+
+.kids-in-line__photo
+  border-radius: 20px
+  @include d-flex
+  width: 100%
+  height: 257px
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+
+
+/*==========  section kids-in-line end  ==========*/
+
+
+
 /*==========  section  ==========*/
 
 /*==========  section end  ==========*/
@@ -75,24 +267,6 @@
 /*==========  section end  ==========*/
 
 
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
 /*==========  section  ==========*/
 
 /*==========  section end  ==========*/
@@ -115,12 +289,27 @@
 /*==========  section end  ==========*/
 
 
-/*==========  section  ==========*/
+/*==========  section events ==========*/
+.events
+  h2
+    width: fit-content
+    margin: 0 42px 0 0
 
-/*==========  section end  ==========*/
+.events-card
+  width: 100%
+  height: 100%
+  border: 2px solid #1D9BD7
+    radius: 20px
+  background: #fff
+  overflow: hidden
+/*==========  section events end  ==========*/
 
 
 
-/*==========  section  ==========*/
+/*==========  section history ==========*/
+.history
+  margin: 40px 0 55px
+  h2
+    margin: 0
 
-/*==========  section end  ==========*/
+/*==========  section history end  ==========*/
