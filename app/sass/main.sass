@@ -17,7 +17,7 @@
     top: 0
     height: 100%
     max-width: 1307px
-    width: 100%
+    width: calc(100% - 450px)
     display: flex
     align-items: center
     justify-content: center
@@ -223,6 +223,7 @@
     max-width: 270px
   .btn
     margin: auto 0 0
+    padding: 4px 20px
 
 
 .btn-toggle
@@ -256,37 +257,213 @@
 
 
 
-/*==========  section  ==========*/
+/*==========  section help ==========*/
+.help
+  margin: 0 0 135px
+  h2
+    margin: 0 0 7px
+    color: $accent
 
-/*==========  section end  ==========*/
-
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
+.subtext
+  color: $accent
+  font-size: 24px
+  margin: 0 0 25px
 
 
+.form-help
+  width: 100%
+  h4
+    margin: 0 0 14px
+    font-size: 18px
+    color: #414042
+  .links-accent
+    font-weight: normal
+    font-size: 14px
+    margin-left: 15px
+  button
+    height: 59px
+    border-radius: 30px
+    padding: 10px 48px
+  .button-wrapper
+    margin-left: 59px
+  .consent
+    margin: 20px auto 0
 
-/*==========  section  ==========*/
+.form-box
+  margin: 0 0 20px
+  &:last-child
+    margin: 0
 
-/*==========  section end  ==========*/
+.form-row
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .radio
+    margin: 0 29px 10px 0
+    &:last-child
+      margin: 0 0 10px
+
+.radio
+  z-index: 1
+  border-radius: 10px
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05)
+  width: fit-content
+  cursor: pointer
+  color: #414042
+  font-size: 16px
+  padding: 11px 18px
+
+.input-radio
+  position: absolute
+  z-index: -1
+  width: 100%
+  height: 100%
+  transition: .3s ease
+  padding: 0
+  background: #fff
+  border: none
+    radius: 10px
+  &:checked
+    background: $accent
+    ~.radio-text
+      color: #fff
+
+.radio-icon
+  @include d-flex
+  width: 38px
+  height: 32px
+  img
+    max-height: 100%
+
+.radio-payment
+  width: 74px
+  height: 74px
+
+.form-help__footer
+  margin: 30px 0 0
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  .checkbox
+    margin: 10px 0 0
+
+.consent
+  color: #FFBA00
+  font-size: 10px
+  line-height: 12px
+  max-width: 186px
+
+.checkbox
+  display: flex
+  align-items: center
+  width: fit-content
+  font-size: 16px
+  color: #414042
+  cursor: pointer
+
+.input-check
+  display: none
+  &:checked
+    ~ .checkbox-custom
+      background: #FFBA00
+
+.checkbox-custom
+  margin: 0 17px 0 0
+  width: 29px
+  height: 29px
+  min-width: 29px
+  border: 3px solid #FFBA00
+    radius: 50%
+
+.help-wrapper
+  width: 100%
+  background: #fff
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1)
+  border-radius: 20px
+  padding: 25px 20px 30px 23px
+  position: relative
+  margin: 20px 0 0
+  h3
+    margin: 0 0 23px
+    text-transform: uppercase
+    font-size: 20px
+    font-weight: bold
+    color: #FFBA00
+
+.help-slider-card
+  width: 100%
+  display: flex
+  align-items: stretch
+  color: #414042
+  &__photo
+    @include d-flex
+    width: 294px
+    height: 300px
+    border-radius: 10px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__description
+    width: calc(100% - 294px)
+    padding: 0 0 0 37px
+    display: flex
+    flex-direction: column
+  h4
+
+    font-size: 24px
+    font-weight: bold
+    text-transform: uppercase
+  .diagnosis
+    max-width: 225px
+
+.sum-help
+  color: $accent
+  margin: 40px 0 auto
+  &__value
+    font-size: 48px
+    font-weight: bold
 
 
-/*==========  section  ==========*/
+.help-share
+  width: 100%
+  padding: 0 100px 0 0
 
-/*==========  section end  ==========*/
+.link-social
+  display: flex
+  align-items: center
+  color: $accent
+  font-size: 12px
+  font-weight: 500
+  line-height: 14px
+  &:hover
+    color: $text
+  &__icon
+    @include d-flex
+    width: 22px
+    height: 13px
+    fill: $accent
+    margin: 0 10px 0 0
+  &__text
+    max-width: 70px
 
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
+.help-slider__nav
+  position: absolute
+  right: 20px
+  bottom: 30px
+  .slick-arrow
+    border-color: $accent
+    stroke: $accent
+    &:hover
+      stroke: #fff
+      background: linear-gradient(93.34deg, #1D9BD7 5.44%, #007CB7 95.22%)
+      box-shadow: 0px 10px 20px rgba(29, 155, 215, 0.25)
+/*==========  section help end  ==========*/
 
 
 /*==========  section events ==========*/
@@ -298,18 +475,167 @@
 .events-card
   width: 100%
   height: 100%
-  border: 2px solid #1D9BD7
+  border:
     radius: 20px
   background: #fff
+  color: #414042
   overflow: hidden
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    border: 2px solid #1D9BD7
+      radius: 20px
+    z-index: -1
+  &__image
+    width: 100%
+    border-radius: 0 0 20px 20px
+    overflow: hidden
+    height: 246px
+    @include d-flex
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: 100%
+    height: calc(100% - 246px)
+    padding: 21px 23px 23px
+    display: flex
+    flex-direction: column
+
+  &__date
+    font-size: 14px
+    color: $accent
+  &__title
+    margin: 12px 0
+    text-transform: uppercase
+    color: #414042
+    font-size: 18px
+    font-weight: bold
+    max-width: 280px
+    &:hover
+      color: $accent
+  .box-text
+    max-width: 380px
+    font-size: 12px
+    line-height: 14px
+    margin: 0 0 18px
+  .btn
+    margin: auto 0 0
+    padding: 4px 20px
+
+.events-slider
+  .slick-slide
+    padding: 0 10px
+    height: auto
+    >div
+      height: 100%
+  .slick-list
+    margin: 0 -10px
+  .slick-track
+    display: flex
+    align-items: stretch
+
+
+.events-slider__nav
+  justify-content: flex-end
+  margin-left: auto
+  .slick-arrow
+    stroke: #FFBA00
+    border-color: #FFBA00
+    &:hover
+      stroke: #fff
+      box-shadow: 0px 10px 20px rgba(255, 186, 0, 0.25)
+
 /*==========  section events end  ==========*/
 
 
 
 /*==========  section history ==========*/
 .history
-  margin: 40px 0 55px
+  margin: 70px 0 55px
   h2
     margin: 0
 
 /*==========  section history end  ==========*/
+
+
+/*==========  section page ==========*/
+.page
+  margin: 35px 0 60px
+
+.page-image
+  @include d-flex
+  border-radius: 10px
+  overflow: hidden
+  img
+    width: 100%
+
+.text-description
+  font-size: 18px
+  p
+    margin: 0 0 25px
+    &:last-child
+      margin: 0
+
+.date
+  margin: 0 0 19px
+  color: $accent
+  font-weight: bold
+
+.image
+  overflow: hidden
+  @include d-flex
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 35.92%)
+  border-radius: 10px
+  height: 399px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.news
+  margin: 100px 0
+
+.kids-in-line__info
+  width: 100%
+  height: 100%
+  background: #fff
+  border: 2px solid #1D9BD7
+    radius: 20px
+  padding: 34px 60px 54px 50px
+  h4
+    text-transform: uppercase
+    font-size: 36px
+    font-weight: bold
+    color: $accent
+    margin: 0 0 20px
+/*==========  section page end  ==========*/
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/

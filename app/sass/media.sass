@@ -3,53 +3,427 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 1800px)
+  .home-slider__img
+    max-width: none
 
+
+@media only screen and (max-width: 1460px)
+  header .nav li
+    margin: 0 20px 0 0
+
+  .nav-home-menu
+    margin: 0 auto
+
+  .phone
+    font-size: 30px
+
+  .mail
+    font-size: 20px
+
+  .footer-box
+    max-width: 285px
+
+  .footer-menu
+    padding: 0 20px
+
+  .address
+    font-size: 14px
+
+  .sum-help__value
+    font-size: 36px
+
+
+@media only screen and (max-width: 1400px)
+  .about-photo
+    max-width: none
+    height: auto
+    margin: 30px 0 0
+
+  .foundation-projects-wrapper
+    justify-content: space-around
+
+  .about
+    margin: 50px 0
+
+@media only screen and (max-width: 1300px)
+  header .nav
+    font-size: 14px
+
+  .form-callback
+    margin: 0 20px 0 0
+
+  .phone
+    font-size: 24px
+
+  footer
+    .btn
+      padding: 4px 20px
+
+  .footer-box
+    max-width: 250px
+
+  .kids-help:before, .kids-help:after
+    width: 800px
+    height: 800px
+
+  .news
+    margin: 60px 0
+
+  .m-76
+    margin: 40px 0
+
+  .m-60
+    margin: 30px 0
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width: 1200px)
+  header
+    .logo
+      margin: 0 auto 0 0
+
+    .nav
+      display: none
+
+  .btn-burger
+    display: flex
+
+  .form-callback
+    width: 60%
+    margin: 20px 0 0
+    padding: 0 20px 0 0
+
+  .form-col
+    width: 100%
+
+    &:first-child
+      max-width: 55%
+      padding: 0 20px 0 0
+      margin: 0
+
+    &:last-child
+      max-width: 45%
+
+  .map
+    width: 40%
+    margin: 20px 0 0
+
+  .footer-box
+    max-width: 300px
+
+  .footer-menu
+    margin: 0 0 0 auto
+    height: auto
+
+  .footer-menu
+    border: none
+    padding: 0
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+  .footer-menu__list
+    margin: 0 0 20px
+    display: flex
+    align-items: flex-start
+
+    li
+      margin: 0 15px 0 0
+
+  footer
+    padding: 40px 0
+
+  .kids-help
+    margin: 0 0 60px
+
+  .form-help
+    button
+      height: 46px
+
+  .form-help .button-wrapper
+    margin: 0 0 0 30px
+
+  .form-row .radio
+    margin: 0 14px 6px 0
+    &:last-child
+      margin: 0 0 6px
+
+  .help-slider-card .diagnosis
+    max-width: none
+
+  .sum-help__value
+    margin: 30px 0 0
+
+  .help
+    margin: 0 0 80px
+
+  .mb-70
+    margin-bottom: 30px
+
+  .page
+    margin: 30px 0 50px
+
+  .text-description
+    font-size: 16px
+
+  .kids-in-line__info
+    padding: 20px
+    h4
+      font-size: 30px
+
+@media only screen and (max-width: 992px)
+  .kids-in-line__photo
+    height: auto
+    margin: 0 0 20px
+
+  .kids-in-line
+    h2
+      max-width: none
+
+  .subtext
+    font-size: 16px
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width: 768px)
+  header
+    padding: 15px 0
+    .btn-group
+      display: none
+
+  .home-slider__title
+    font-size: 40px
+
+  .home-slider__content
+    max-width: 450px
+
+  .home-slider__img
+    width: calc(100% - 300px)
+
+  .home-slider__nav .slick-dots
+    margin: 0 30px 0 auto
+
+  .advantages-in-number__item
+    max-width: 50%
+    width: 100%
+    flex: auto
+    margin: 0 0 10px
+    &:first-child, &:nth-child(2), &:nth-child(3), &:last-child
+      max-width: 50%
+
+  .foundation-projects-box
+    width: 100%
+    margin: 0 0 15px
+    height: auto
+    min-height: auto
+    h4
+      max-width: none
+    &:last-child
+      margin: 0
+
+  .events-slider__nav
+    width: 100%
+    margin: 20px auto 0
+    justify-content: center
+
+  .history
+    margin: 60px 0
+    h2
+      margin: 0 0 20px
+
+  .modal-header .btn-close
+    right: 20px
+    top: 20px
+    width: 40px
+    height: 40px
+    padding: 15px
+
+  .modal-content .box-text
+    font-size: 16px
+
+  .kids-in-line__info
+    h4
+      font-size: 24px
+
+  .m-76
+    margin: 20px 0
+
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width: 660px)
+  .phone
+    font-size: 22px
 
+  .mail
+    font-size: 18px
+
+  footer
+    .btn
+      font-size: 15px
+
+  .footer-box
+    max-width: none
+    margin: 0 auto
+    justify-content: center
+    align-items: center
+    text-align: center
+    display: flex
+    flex-direction: column
+
+    &__wrapper
+      margin: 20px 0 0
+
+  .list-social
+    margin: 0 30px 0 0
+
+  .footer-menu
+    margin: 20px auto 0
+    justify-content: center
+    align-items: center
+
+  .map
+    width: 100%
+    height: 300px
+
+  .form-callback
+    padding: 0
+    width: 100%
+
+  h2
+    font-size: 30px
+
+  .box-text
+    font-size: 15px
+
+  .help-slider-card
+    flex-wrap: wrap
+    &__photo
+      margin: 0 auto
+    &__description
+      width: 100%
+      padding: 0
+      margin: 20px 0 0
+
+  .sum-help
+    margin: 15px 0 20px
+    &__value
+      margin: 10px 0 0
+
+@media only screen and (max-width: 576px)
+  .home-slider__img
+    width: 100%
+    opacity: .4
+
+  .home-slider__content
+    max-width: none
+    .btn
+      margin: 30px auto 0
+
+  .home-slider__nav
+    .slick-dots
+      margin: 0 auto
+    .slick-prev
+      order: -1
+
+  .about-photo
+    .btn
+      font-size: 12px
+      padding: 4px 20px
+      height: 33px
+    &__head
+      top: 20px
+      padding: 0 10px
+
+  .logo-company
+    max-width: 120px
+
+  .kids-card__photo
+    height: auto
+
+  h2
+    font-size: 24px
+
+  .btn-toggle
+    margin: 0 auto
+
+  .form-help__footer
+    margin: 20px 0 0
+    .checkbox
+      width: 100%
+      margin: 0
+
+  .form-help
+    .button-wrapper
+      margin: 20px auto 0
+
+  .modal-content
+    padding: 50px 30px 30px
+
+  .modal-header
+    margin: 0 0 30px
+
+  .image
+    height: 300px
+
+@media only screen and (max-width: 480px)
+  .home-slider__title
+    font-size: 30px
+    text-align: center
+
+  .advantages-in-number__item
+    max-width: none
+    &:first-child, &:nth-child(2), &:nth-child(3), &:last-child
+      max-width: 100%
+    &-number
+      font-size: 40px
+
+  .form-help .links-accent
+    width: 100%
+    margin: 0
+
+  .events
+    h2
+      width: 100%
+      margin: 0 0 20px
+
+  .image
+    height: 250px
+
+  .news
+    margin: 50px 0 30px
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width: 380px)
+  .form-callback
+    flex-wrap: wrap
 
+  .form-col
+    width: 100%
 
-/*==========  Mobile First  ==========*/
+    &:first-child
+      max-width: none
+      padding: 0
+      margin: 0 0 20px
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
+    &:last-child
+      max-width: none
 
+  .footer-menu__list
+    li
+      margin: 0 10px 0 0
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
+  .home-slider__title
+    font-size: 24px
+    span
+      &:before
+        height: 6px
 
+  .logo-company
+    max-width: 100px
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+  .about-photo
+    .btn
+      font-size: 10px
+      padding: 4px 10px
+      height: 30px
