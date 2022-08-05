@@ -147,6 +147,8 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .wrapper {
+    padding: 73px 0 0; }
   header {
     padding: 15px 0; }
     header .btn-group {
