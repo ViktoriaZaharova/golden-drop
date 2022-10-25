@@ -409,23 +409,229 @@
 
           <form method="post" class="form-help">
             <div class="form-box">
-              <h4>Способ оплаты</h4>
-              <div class="form-row">
-                <label class="radio radio-payment">
-                  <input type="radio" name="radio" class="input-radio">
-                  <span class="radio-icon"><img src="img/cloud-pay.png" alt=""></span>
-                </label>
-                <label class="radio radio-payment">
-                  <input type="radio" name="radio" class="input-radio">
-                  <span class="radio-icon"><img src="img/sbp-pay.png" alt=""></span>
-                </label>
+<!--              new blocks-->
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a href="#" class="nav-link pay_type active show" id="nav-tab1" data-bs-toggle="tab"
+                     data-bs-target="#tab1">Ежемесячно</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pay_type" data-bs-toggle="tab" id="nav-tab2" data-bs-target="#tab2">Один раз</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pay_type" data-bs-toggle="tab" id="nav-tab3" data-bs-target="#tab3">Компаниям</a>
+                </li>
+              </ul>
 
-                <a href="#" class="links-accent">Другие виды оплаты
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#next"></use>
-                  </svg>
-                </a>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="nav-tab1">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="sum-tab1" data-bs-toggle="tab" data-bs-target="#tab-pay1"
+                              type="button" role="tab" aria-controls="tab-pay1" aria-selected="true">50 ₽
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="sum-tab2" data-bs-toggle="tab" data-bs-target="#tab-pay2"
+                              type="button"
+                              role="tab" aria-controls="tab-pay2" aria-selected="false">150 ₽
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="sum-tab3" data-bs-toggle="tab" data-bs-target="#tab-pay3"
+                              type="button"
+                              role="tab" aria-controls="tab-pay3" aria-selected="false">250 ₽
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="sum-tab4" data-bs-toggle="tab" data-bs-target="#tab-pay4"
+                              type="button"
+                              role="tab" aria-controls="tab-pay4" aria-selected="false">Другая сумма
+                      </button>
+                    </li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="tab-pay1" role="tabpanel" aria-labelledby="sum-tab1">
+                      <div class="box-text">
+                        <p><strong>Ежемесячное пожертвование, подключенное на год, дает нам возможность купить набор
+                          средств первой необходимости для лежачих детей</strong></p>
+                      </div>
+                      <label>
+                        <input type="text" placeholder="Ваше имя*" required name="name">
+                      </label>
+                      <label>
+                        <input type="text" placeholder="Ваш e-mail*" required name="mail">
+                      </label>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab-pay2" role="tabpanel" aria-labelledby="sum-tab2">
+                      <div class="box-text">
+                        <p><strong>Ежемесячное пожертвование, подключенное на год, позволит оплатить проезд к месту
+                          реабилитации для одного из наших подопечных</strong></p>
+                      </div>
+                      <label>
+                        <input type="text" placeholder="Ваше имя*" required name="name">
+                      </label>
+                      <label>
+                        <input type="text" placeholder="Ваш e-mail*" required name="mail">
+                      </label>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab-pay3" role="tabpanel" aria-labelledby="sum-tab3">
+                      <div class="box-text">
+                        <p><strong>Это стоимость одной инъекции лечебного препарата, необходимого для ребёнка с
+                          аутизмом</strong></p>
+                      </div>
+
+                      <label>
+                        <input type="text" placeholder="Ваше имя*" required name="name">
+                      </label>
+                      <label>
+                        <input type="text" placeholder="Ваш e-mail*" required name="mail">
+                      </label>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab-pay4" role="tabpanel" aria-labelledby="sum-tab4">
+                      <div class="box-text">
+                        <p><strong>Любая сумма, которую вы решите пожертвовать, обязательно будет кстати для лечения
+                          тяжелобольного ребёнка</strong></p>
+                      </div>
+                      <label>
+                        <input type="text" placeholder="Ваше имя*" required name="name">
+                      </label>
+                      <label>
+                        <input type="text" placeholder="Ваш e-mail*" required name="mail">
+                      </label>
+                      <label>
+                        <input type="text" placeholder="Сумма перевода*" required name="sum">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="nav-tab2">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="sum-tab5" data-bs-toggle="tab" data-bs-target="#tab-pay5"
+                              type="button" role="tab" aria-controls="tab-pay5" aria-selected="true">300 ₽
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="sum-tab6" data-bs-toggle="tab" data-bs-target="#tab-pay6"
+                              type="button"
+                              role="tab" aria-controls="tab-pay6" aria-selected="false">500 ₽
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="sum-tab7" data-bs-toggle="tab" data-bs-target="#tab-pay7"
+                              type="button"
+                              role="tab" aria-controls="tab-pay7" aria-selected="false">1000 ₽
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="sum-tab8" data-bs-toggle="tab" data-bs-target="#tab-pay8"
+                              type="button"
+                              role="tab" aria-controls="tab-pay8" aria-selected="false">Другая сумма
+                      </button>
+                    </li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="tab-pay5" role="tabpanel" aria-labelledby="sum-tab5">
+                      <div class="box-text">
+                        <p><strong>Ежемесячное пожертвование, подключенное на год, дает нам возможность купить набор
+                          средств первой необходимости для лежачих детей</strong></p>
+                      </div>
+                      <label>
+                        <input type="text" placeholder="Ваше имя*" required name="name">
+                      </label>
+                      <label>
+                        <input type="text" placeholder="Ваш e-mail*" required name="mail">
+                      </label>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab-pay6" role="tabpanel" aria-labelledby="sum-tab6">
+                      <div class="box-text">
+                        <p><strong>Ежемесячное пожертвование, подключенное на год, позволит оплатить проезд к месту
+                          реабилитации для одного из наших подопечных</strong></p>
+                      </div>
+                      <label>
+                        <input type="text" placeholder="Ваше имя*" required name="name">
+                      </label>
+                      <label>
+                        <input type="text" placeholder="Ваш e-mail*" required name="mail">
+                      </label>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab-pay7" role="tabpanel" aria-labelledby="sum-tab7">
+                      <div class="box-text">
+                        <p><strong>Любая сумма, которую вы решите пожертвовать, обязательно будет кстати для лечения
+                          тяжелобольного ребёнка</strong></p>
+                      </div>
+
+                      <label>
+                        <input type="text" placeholder="Ваше имя*" required name="name">
+                      </label>
+                      <label>
+                        <input type="text" placeholder="Ваш e-mail*" required name="mail">
+                      </label>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab-pay8" role="tabpanel" aria-labelledby="sum-tab8">
+                      <div class="box-text">
+                        <p><strong>Любая сумма, которую вы решите пожертвовать, обязательно будет кстати для лечения
+                          тяжелобольного ребёнка</strong></p>
+                      </div>
+                      <label>
+                        <input type="text" placeholder="Ваше имя*" required name="name">
+                      </label>
+                      <label>
+                        <input type="text" placeholder="Ваш e-mail*" required name="mail">
+                      </label>
+                      <label>
+                        <input type="text" placeholder="Сумма перевода*" required name="sum">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="nav-tab3">
+
+                  <div class="box-text">
+                    <p>Благотворительный фонд «Золотая капля»</p>
+                    <p>ИНН: 5826006862</p>
+                    <p>КПП: 582601001</p>
+                    <p>Р/с: 40703810200150000016</p>
+                    <p>Банк: ПАО Банк "Кузнецкий"</p>
+                    <p>БИК: 045655707</p>
+                    <p>К/с: 30101810200000000707</p>
+                    <p>Назначение платежа: «Пожертвование на уставные цели»</p>
+                    <a href="#" download="#" class="btn btn-accent">Скачать реквизиты</a>
+                  </div>
+                </div>
               </div>
+
+              <!--              new blocks-->
+
+
+
+              <!--              <h4>Способ оплаты</h4>-->
+              <!--              <div class="form-row">-->
+              <!--                <label class="radio radio-payment">-->
+              <!--                  <input type="radio" name="radio" class="input-radio">-->
+              <!--                  <span class="radio-icon"><img src="img/cloud-pay.png" alt=""></span>-->
+              <!--                </label>-->
+              <!--                <label class="radio radio-payment">-->
+              <!--                  <input type="radio" name="radio" class="input-radio">-->
+              <!--                  <span class="radio-icon"><img src="img/sbp-pay.png" alt=""></span>-->
+              <!--                </label>-->
+
+              <!--                <a href="#" class="links-accent">Другие виды оплаты-->
+              <!--                  <svg class="svg-icon">-->
+              <!--                    <use xlink:href="img/sprite.svg#next"></use>-->
+              <!--                  </svg>-->
+              <!--                </a>-->
+              <!--              </div>-->
             </div>
 
             <div class="form-box">
