@@ -786,8 +786,6 @@
     border-color: #1D9BD7; }
   .tab-content label {
     margin: 0 0 20px; }
-    .tab-content label:last-child {
-      margin: 0; }
   .tab-content .box-text strong {
     margin: 0 0 20px; }
 
